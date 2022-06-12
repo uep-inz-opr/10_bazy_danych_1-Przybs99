@@ -14,7 +14,7 @@ if __name__ == "__main__":
         next(file, None)
         num_rows = [var for var in file]
         cursor.executemany("INSERT INTO polaczenia (from_subscriber, to_subscriber, datetime, duration , celltower) VALUES (?, ?, ?, ?, ?);", num_rows)
-        
+        con.commit()
 
 con
 c = con.cursor()
