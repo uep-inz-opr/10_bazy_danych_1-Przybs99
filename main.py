@@ -9,7 +9,7 @@ if __name__ == "__main__":
                     duration data_type INTEGER , 
                     celltower data_type INTEGER);''')
 
-    with open ("polaczenia.csv", 'r') as a:
+    with open ("polaczenia_duze.csv", 'r') as a:
         file = csv.reader(a, delimiter=';')
         next(file, None)
         num_rows = [var for var in file]
